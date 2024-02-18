@@ -1,0 +1,25 @@
+{
+  "actions": [
+    { "nom": "XSP.TO", "quantite": 11 },
+    { "nom": "XIU.TO", "quantite": 11 },
+    { "nom": "HXT.TO", "quantite": 1 },
+    { "nom": "HCAL.TO", "quantite": 5 },
+    { "nom": "QQC.TO", "quantite": 5 },
+    { "nom": "XWD.TO", "quantite": 9 },
+
+    { "nom": "HDIF.TO", "quantite": 12 },
+    { "nom": "DFN.TO", "quantite": 6 },
+    { "nom": "HDIV.TO", "quantite": 8 },
+    { "nom": "ABX.TO", "quantite": 1 },
+    { "nom": "AQN.TO", "quantite": 2 },
+    { "nom": "VBAL.TO", "quantite": 2 },
+    { "nom": "EIT-UN.TO", "quantite": 2 },
+
+    { "nom": "QMAX.TO", "quantite": 6 },
+    { "nom": "CASH.TO", "quantite": 1 },
+    { "nom": "VDY.TO", "quantite": 7 },
+    { "nom": "IBIT", "quantite": 4 },
+    { "nom": "EBIT.TO", "quantite": 2 }
+  ]
+}
+  

@@ -64,7 +64,7 @@ function App() {
   return (
     <div className="App">
       <h1>Portefeuille en temps réel</h1>
-      <h2 className='portefeuille-value'>{portefeuille.toFixed(2)} $</h2>
+      <div className='container'><div className='montant'>{portefeuille.toFixed(2)} $</div></div>
     </div>
   );
 }

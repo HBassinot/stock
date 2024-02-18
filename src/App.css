@@ -2,40 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 /* App.css */
 body {
@@ -49,10 +15,30 @@ body {
   height: 100vh;
 }
 
-.container {
-  text-align: center;
+.montant {
+  font-size: 13rem; /* Taille de la police */
+  background-color: black; /* Couleur de fond */
+  color: white; /* Couleur du texte */
+  padding: 20px; /* Espace intérieur */
+  border-radius: 10px; /* Coins arrondis */
+  text-align: center; /* Centrage du texte */
 }
 
-.portefeuille-value {
-  font-size: 148px;
+@media screen and (max-width: 1024px) {
+  .montant {
+    font-size: 10rem;
+  }
+}
+
+/* Media query pour rendre le montant plus petit sur les petits écrans */
+@media screen and (max-width: 768px) {
+  .montant {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .montant {
+    font-size: 4rem;
+  }
 }

@@ -44,7 +44,7 @@ function App() {
 
   const getPrixStock = (stock, prixAction) => {
     for (const action of prixAction) {
-      if(action.symbol == stock) {
+      if(action.symbol === stock) {
         return action.price;
       }
     }
@@ -54,7 +54,7 @@ function App() {
   const getPrixActionsYahooFinance = async (stock) => {
     const response = await axios.get(`http://stock.hbassinot.com:8000/stock/price/${stock}`);
     let cur = 1;
-    if(response.data.currency == "USD") {
+    if(response.data.currency === "USD") {
       const usdcar = await axios.get(`http://stock.hbassinot.com:8000/currency/USDCAD`);
       cur = usdcar.data.price;
     }

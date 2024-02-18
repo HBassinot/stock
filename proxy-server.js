@@ -1,5 +1,7 @@
 const express = require('express');
 const axios = require('axios');
+const https = require('https');
+const fs = require('fs');
 
 const app = express();
 const port = 8000;
@@ -9,6 +11,12 @@ app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
   next();
 });
+
+// Options pour le serveur HTTPS (certificat auto-signé à des fins de test)
+const httpsOptions = {
+  key: fs.readFileSync('server-key.pem'),
+  cert: fs.readFileSync('server-cert.pem')
+};
 
 // Route pour appeler le web service tiers
 app.get('/stock/price/:stock', async (req, res) => {
@@ -50,6 +58,7 @@ app.get('/currency/:currency', async (req, res) => {
 });
 
 // Démarrage du serveur
-app.listen(port, () => {
+// Création du serveur HTTPS
+https.createServer(httpsOptions, app).listen(port, () => {
   console.log(`Serveur démarré sur le port ${port}`);
 });

@@ -54,14 +54,11 @@ function App() {
   const getPrixActionsYahooFinance = async (stock) => {
     const response = await axios.get(`http://stock.hbassinot.com:8000/stock/price/${stock}`);
     let cur = 1;
-    if(response.data.chart.result[0].meta.currency == "USD") {
+    if(response.data.currency == "USD") {
       const usdcar = await axios.get(`http://stock.hbassinot.com:8000/currency/USDCAD`);
-      cur = usdcar.data.spark.result[0].response[0].meta.regularMarketPrice;
-
-     // cur = 1.349295;
-     console.log("USD = "+ cur);
+      cur = usdcar.data.price;
     }
-    return response.data.chart.result[0].meta.regularMarketPrice * cur; 
+    return response.data.price * cur; 
   };
 
   return (

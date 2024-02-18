@@ -3,12 +3,13 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 
-## Install no cors proxy 
-sudo npm install no-cors-proxy -g
+## Install server proxy 
 
-no-cors-proxy -p 8000 -t https://query1.finance.yahoo.com
+npm install express axios
 
-INFOS : https://www.npmjs.com/package/no-cors-proxy
+node proxy-server.js
+
+
 
 ## launch app
 

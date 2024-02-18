@@ -19,10 +19,11 @@ app.get('/stock/price/:stock', async (req, res) => {
     const response = await axios.get(`https://query1.finance.yahoo.com/v8/finance/chart/${stocksplit}`);
     
     // Récupération du prix de l'action depuis la réponse
-    const prix = response.data.chart.result[0].meta.regularMarketPrice;
+    const price = response.data.chart.result[0].meta.regularMarketPrice;
+    const currency = response.data.chart.result[0].meta.currency;
 
     // Envoi du prix de l'action en réponse
-    res.json({ prix });
+    res.json({ price, currency });
   } catch (error) {
     console.error('Erreur lors de la récupération du prix de l\'action :', error);
     res.status(500).json({ error: 'Erreur lors de la récupération du prix de l\'action' });
@@ -38,10 +39,10 @@ app.get('/currency/:currency', async (req, res) => {
     const response = await axios.get(`https://query1.finance.yahoo.com/v7/finance/spark?symbols=${currencysplit}%3DX`);
     
     // Récupération du prix de l'action depuis la réponse
-    const prix = response.data.spark.result[0].response[0].meta.regularMarketPrice;
+    const price = response.data.spark.result[0].response[0].meta.regularMarketPrice;
 
     // Envoi du prix de l'action en réponse
-    res.json({ prix });
+    res.json({ price });
   } catch (error) {
     console.error('Erreur lors de la récupération du prix de l\'action :', error);
     res.status(500).json({ error: 'Erreur lors de la récupération du prix de l\'action' });

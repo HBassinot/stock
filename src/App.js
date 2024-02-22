@@ -38,7 +38,7 @@ function App() {
   useEffect(() => {
     fetchData();
 
-    const interval = setInterval(fetchData, 100000); // Rafraîchir toutes les 100 secondes
+    const interval = setInterval(fetchData, 10000); // Rafraîchir toutes les 100 secondes
     return () => clearInterval(interval);
   }, []);
 

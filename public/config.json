@@ -1,25 +1,41 @@
 {
-  "actions": [
-    { "nom": "XSP.TO", "quantite": 13 },
-    { "nom": "XIU.TO", "quantite": 12 },
-    { "nom": "HXT.TO", "quantite": 1 },
-    { "nom": "HCAL.TO", "quantite": 5 },
-    { "nom": "QQC.TO", "quantite": 6 },
-    { "nom": "XWD.TO", "quantite": 10 },
-
-    { "nom": "HDIF.TO", "quantite": 12 },
-    { "nom": "DFN.TO", "quantite": 6 },
-    { "nom": "HDIV.TO", "quantite": 8 },
-    { "nom": "ABX.TO", "quantite": 1 },
-    { "nom": "AQN.TO", "quantite": 2 },
-    { "nom": "VBAL.TO", "quantite": 2 },
-    { "nom": "EIT-UN.TO", "quantite": 2 },
-
-    { "nom": "QMAX.TO", "quantite": 6 },
-    { "nom": "CASH.TO", "quantite": 1 },
-    { "nom": "VDY.TO", "quantite": 7 },
-    { "nom": "IBIT", "quantite": 6 },
-    { "nom": "EBIT.TO", "quantite": 2 }
+  "portfolios" : [
+    {
+      "name":"REER",
+      "actions": [
+        { "nom": "XSP.TO", "quantite": 13 },
+        { "nom": "XIU.TO", "quantite": 12 },
+        { "nom": "HXT.TO", "quantite": 1 },
+        { "nom": "HCAL.TO", "quantite": 5 },
+        { "nom": "QQC.TO", "quantite": 6 },
+        { "nom": "HDIV.TO", "quantite": 2 },
+        { "nom": "XWD.TO", "quantite": 3 }
+      ]
+    },    
+    {
+      "name":"CELI",
+      "actions": [
+        { "nom": "XWD.TO", "quantite": 7 },
+        { "nom": "HDIF.TO", "quantite": 6 },
+        { "nom": "QMAX.TO", "quantite": 6 },
+        { "nom": "CASH.TO", "quantite": 1 },
+        { "nom": "VDY.TO", "quantite": 7 },
+        { "nom": "IBIT", "quantite": 6 },
+        { "nom": "EBIT.TO", "quantite": 2 }
+      ]
+    },    
+    {
+      "name":"NE",
+      "actions": [
+        { "nom": "HDIF.TO", "quantite": 6 },
+        { "nom": "DFN.TO", "quantite": 6 },
+        { "nom": "HDIV.TO", "quantite": 6 },
+        { "nom": "ABX.TO", "quantite": 1 },
+        { "nom": "AQN.TO", "quantite": 2 },
+        { "nom": "VBAL.TO", "quantite": 2 },
+        { "nom": "EIT-UN.TO", "quantite": 2 }
+      ]
+    }
   ]
 }
   

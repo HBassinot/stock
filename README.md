@@ -9,6 +9,11 @@ npm install express axios
 
 node proxy-server.js
 
+### Utiliser PM2 prod server 
+
+npm install pm2 -g
+
+pm2 start proxy-server.js
 
 
 ## launch app

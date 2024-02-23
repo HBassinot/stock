@@ -145,8 +145,7 @@ async function getStockPrice(stock) {
 async function getCurrencyPrice(currency) {
   try {
       // Appel du web service tiers
-      const currencySplit = currency.split(":")[0];
-      const response = await axios.get(`https://query1.finance.yahoo.com/v7/finance/spark?symbols=${currencySplit}%3DX`);
+      const response = await axios.get(`https://query1.finance.yahoo.com/v7/finance/spark?symbols=${currency}%3DX`);
       
       // Récupération du prix de la devise depuis la réponse
       const price = response.data.spark.result[0].response[0].meta.regularMarketPrice;

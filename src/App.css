@@ -15,8 +15,26 @@ body {
   height: 100vh;
 }
 
+table{
+  margin: auto;
+}
+td {
+  padding: 5px;
+  padding-left: 42px;
+  padding-right: 42px;
+}
+
 .montant {
   font-size: 13rem; /* Taille de la police */
+  background-color: black; /* Couleur de fond */
+  color: white; /* Couleur du texte */
+  padding: 20px; /* Espace intérieur */
+  border-radius: 10px; /* Coins arrondis */
+  text-align: center; /* Centrage du texte */
+}
+
+.accounts {
+  font-size: 2rem; /* Taille de la police */
   background-color: black; /* Couleur de fond */
   color: white; /* Couleur du texte */
   padding: 20px; /* Espace intérieur */
@@ -54,4 +72,27 @@ body {
 
 .blink {
   animation: blink 1.5s ease-in-out;
+}
+
+
+.triangle-green {
+  position:relative;
+  left:-18px;
+  top: -23px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid green;
+}
+
+.triangle-red {
+  width: 0;
+  position:relative;
+  left:-18px;
+  top: -23px;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid red;
 }

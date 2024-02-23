@@ -9,7 +9,7 @@ function App() {
   let domain = "stock.hbassinot.com";
   let port = 8000;
 
-  if(true) {
+  if(false) {
     domain = "localhost";
   }
   const [portefeuille, setPortefeuille] = useState(0);

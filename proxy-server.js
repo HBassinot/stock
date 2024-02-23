@@ -4,7 +4,7 @@ const https = require('https');
 const fs = require('fs');
 
 const app = express();
-const port = 443;
+const port = 8000;
 
 // Chemin vers le fichier JSON
 const stocksPath = './public/config.json';

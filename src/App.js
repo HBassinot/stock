@@ -7,7 +7,7 @@ import './App.css';
 
 function App() {
   let domain = "stock.hbassinot.com";
-  let port = 443;
+  let port = 8000;
 
   if(false) {
     domain = "localhost";
